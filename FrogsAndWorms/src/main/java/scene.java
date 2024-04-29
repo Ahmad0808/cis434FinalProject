@@ -10,7 +10,7 @@ public class scene{
 	String btn2;
 	String btn3;
 	
-	
+	public scene(){}
 	
 	
 	}
