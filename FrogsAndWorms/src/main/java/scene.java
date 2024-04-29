@@ -9,6 +9,14 @@ public class scene{
 	String btn1;
 	String btn2;
 	String btn3;
+	int b1Connect;
+	int b2Connect;
+	int b3Connect;
+	
+	
+	
+	}
+
 	
 	public scene(){}
 	
