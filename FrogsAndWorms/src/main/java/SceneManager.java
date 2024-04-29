@@ -19,6 +19,9 @@ public class SceneManager {
 		scene.btn1 = "Strength";
 		scene.btn2 = "Luck";
 		scene.btn3 = "Intelligence";
+		scene.b1Connect = 2;
+		scene.b2Connect = 2;
+		scene.b3Connect =2;
 		return scene;
 	}
 	
@@ -30,6 +33,9 @@ public class SceneManager {
 		scene.btn1 = "Wait";
 		scene.btn2 = "Break-Free";
 		scene.btn3 = "";
+		scene.b1Connect = 2;
+		scene.b2Connect = 3;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -41,6 +47,9 @@ public class SceneManager {
 		scene.btn1 = "Dimly-lit Path";
 		scene.btn2 = "Door";
 		scene.btn3 = "";
+		scene.b1Connect = 4;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -52,6 +61,9 @@ public class SceneManager {
 		scene.btn1 = "Run";
 		scene.btn2 = "Fight";
 		scene.btn3 = "";
+		scene.b1Connect = 6;
+		scene.b2Connect = 5;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene scenePostFightCatacombsRun() {
@@ -62,6 +74,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
 		scene.btn3 = "";
+		scene.b1Connect = 7;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 		}
 	
@@ -73,6 +88,9 @@ public class SceneManager {
 	scene.btn1 = "Continue";
 	scene.btn2 = "";
 	scene.btn3 = "";
+	scene.b1Connect = 7;
+	scene.b2Connect = -1;
+	scene.b3Connect = -1;
 	return scene;
 	}
 	
@@ -84,6 +102,9 @@ public class SceneManager {
 		scene.btn1 = "Plains";
 		scene.btn2 = "Frosk Myr";
 		scene.btn3 = "";
+		scene.b1Connect = 8;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -95,6 +116,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
 		scene.btn3 = ""; 	
+		scene.b1Connect = 9;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene scenePlainsBattleOne() {
@@ -105,6 +129,9 @@ public class SceneManager {
 		scene.btn1 = "Fight";  //Pipe to fight mechanic no scene switch
 		scene.btn2 = "Run";  // Roll -> Pass = new scene Fail = Fight
 		scene.btn3 = "Big Brain";   //Pass = new scene Fail = fight
+		scene.b1Connect = 10;
+		scene.b2Connect = 10;
+		scene.b3Connect = 10;
 		return scene;
 	}
 	
@@ -116,6 +143,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";  //Pipe to fight mechanic no scene switch
 		scene.btn2 = "";  // Roll -> Pass = new scene Fail = Fight
 		scene.btn3 = "";   //Pass = new scene Fail = fight
+		scene.b1Connect = 11;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;  //Consider healing player here?
 	}
 	
@@ -124,9 +154,12 @@ public class SceneManager {
 		scene.sceneID = 11;
 		scene.image = new Image(getClass().getResourceAsStream("worm.jpg"));
 		scene.text = "I set off on my final leg of the Journey, I pray for little difficulties…as a Wyrm bursts through the crust of the Earth. There is no escape. I try to think back on my studies in Academy to remember their weak points.";
-		scene.btn1 = "Continue";  //Pipe to fight mechanic no scene switch
+		scene.btn1 = "Fight";  //Pipe to fight mechanic no scene switch
 		scene.btn2 = "";  // Roll -> Pass = new scene Fail = Fight
 		scene.btn3 = "";   //Pass = new scene Fail = fight
+		scene.b1Connect = 12;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;  //Consider healing player here?
 	}
 	
@@ -137,7 +170,10 @@ public class SceneManager {
 		scene.text = "As you have reached the edge of the plains, you slowly see the greens of your home return. You notice as your kin recognize you and know the return of the Bog-lord means the Frosks have a fighting chance";
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
-		scene.btn3 = ""; 	
+		scene.btn3 = "";
+		scene.b1Connect = 13;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -149,6 +185,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
 		scene.btn3 = ""; 	
+		scene.b1Connect = 14;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene insideFroskelott() {
@@ -158,7 +197,10 @@ public class SceneManager {
 		scene.text = "Durkesh: My lord! You have returned! No one knew where you had gone after the Battle of Mørk Skog.";
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 15;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -170,6 +212,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
 		scene.btn3 = ""; 	
+		scene.b1Connect = 16;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -180,7 +225,10 @@ public class SceneManager {
 		scene.text = "Durkesh:Our forces were dispersed and had to retreat. Somehow in all of that we had lost you and had lost all hope for your return. We were beginning preparations to send spies in to survey if they had taken or slain you, however just days before we sent them out you returned";
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 17;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene returnToDurkesh() {
@@ -190,7 +238,10 @@ public class SceneManager {
 		scene.text = "Gylve: Do not fret dear Durkesh. No need for spies, no need for further battles. I have lived to see the inside of Skrottvete. I know the ways and I must be the one to end this feud. The great Kelly haunts me no further. I simply ask for some of your services, friend";
 		scene.btn1 = "Continue";
 		scene.btn2 = "";
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 18;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene imLosingIt() {
@@ -200,7 +251,10 @@ public class SceneManager {
 		scene.text = "“Durkesh: Of course lord. Lets repair Zephyr. I am only able to do so much with my knowledge of this relic’s abilities.”";
 		scene.btn1 = "Ask for Repair";  //regular plus one level for sword
 		scene.btn2 = "Big Brain";  //chance for two in one upgrade
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 19;
+		scene.b2Connect = 19;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -211,7 +265,10 @@ public class SceneManager {
 		scene.text = "Durkesh: Here is your new and improved sword my master. The original properties have been restored and its beautiful flaming edges should reappear in times of need.";
 		scene.btn1 = "Continue";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
-		scene.btn3 = ""; 	
+		scene.btn3 = "";
+		scene.b1Connect = 20;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	public scene swordNew2() {
@@ -221,7 +278,10 @@ public class SceneManager {
 		scene.text = "Gylve: Thank you my friend. I will rest here tonight and then go by way of the Mørk Skog as few should remain after our battle.";
 		scene.btn1 = "Continue";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 21;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -233,7 +293,11 @@ public class SceneManager {
 		scene.btn1 = "Continue";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
 		scene.btn3 = ""; 	
+		scene.b1Connect = 22;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
+		
 	}
 	
 	public scene skrotteveteExterior() {
@@ -244,6 +308,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
 		scene.btn3 = ""; 	
+		scene.b1Connect = 23;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -254,7 +321,10 @@ public class SceneManager {
 		scene.text = "Upon entering, I am greeted by a Rat Warrior and Rat Knight";
 		scene.btn1 = "Fight";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 24;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -266,6 +336,9 @@ public class SceneManager {
 		scene.btn1 = "Continue";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
 		scene.btn3 = ""; 	
+		scene.b1Connect = 25;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -276,7 +349,10 @@ public class SceneManager {
 		scene.text = "I continued forward finally entering Kelly's Fortress of Torture. As I do 2 Rat Knights and 2 Rat Warriors approach for battle";
 		scene.btn1 = "Fight";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
-		scene.btn3 = ""; 	
+		scene.btn3 = ""; 
+		scene.b1Connect = 26;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 	
@@ -288,6 +364,9 @@ public class SceneManager {
 		scene.btn1 = "Fight";  //regular plus one level for sword
 		scene.btn2 = "";  //chance for two in one upgrade
 		scene.btn3 = ""; 	
+		scene.b1Connect = -1;
+		scene.b2Connect = -1;
+		scene.b3Connect = -1;
 		return scene;
 	}
 }
