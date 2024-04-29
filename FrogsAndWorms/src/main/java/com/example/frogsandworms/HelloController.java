@@ -1,25 +1,32 @@
 package com.example.frogsandworms;
 
-<<<<<<< Updated upstream
-=======
+
 import java.io.File;
 
 import javafx.event.ActionEvent;
->>>>>>> Stashed changes
+import java.io.File;
+
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.text.Text;
 
 public class HelloController {
-    @FXML
-    private Label welcomeText;
 
     @FXML
-<<<<<<< Updated upstream
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
-}
-=======
+    private ImageView imageView;
+
+    @FXML
+    private Text gameText;
+
+    @FXML
+    private ToggleGroup radioGroup;
+
+    @FXML
+
     private ImageView imageView;
 
     @FXML
@@ -85,4 +92,3 @@ public class HelloController {
         option3.setText(currentScene.btn3);
     }
 }
->>>>>>> Stashed changes
